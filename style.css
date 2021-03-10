@@ -1,75 +1,88 @@
 body {
     margin: 0;
     padding: 0;
-    background: #dddcdc;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: #333;
+    height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
-.boxlogin {
-    width:350px;
-    height: 480px;
-    flex-shrink: 0;
-    background: #fff;
-    border-radius: 5px;
-}
-
-.containerLogo {
-    height: 43%;
+.section {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; 
+    background: url("bgsombre.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.cercle {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background: rgb(250,165,9);
+.logoHautGauche {
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    font-size: 20px;
+    color: #f1f1f1;
+}
+
+.listeTopDroite {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    font-size: 20px;
 }
-
-.cercle img {
-    width: 100px;
-}
-.containerInputs {
-    height: 57%; 
-}
-
-form input {
-    display: block;
-    margin: 20px auto;
-    outline: 0; 
-    background: #f2f2f2;
-    width: 90%;
-    border: 0;
-    padding: 15px;
-    border-radius: 3px;
-    box-sizing: border-box;
-    font-size: 14px;
-}
-
-form button {
-    display: block;
-    margin: 20px auto;
-    outline: 0; 
-    background: rgb(250,165,9);
-    width: 90%;
-    border: 0;
-    padding: 15px;
-    border-radius: 3px;
-    box-sizing: border-box;
-    font-size: 16px;
+.item {
+    margin: 10px;
+    color: #f1f1f1;
     cursor: pointer;
 }
 
-.txtFin {
+h1 {
+    font-size: 90px;
+    color: #fff;
+    margin-bottom: 10px;
     text-align: center;
 }
-.txtFin a {
-    text-decoration: none;
-    color: burlywood;
+.flexForm {
+    display: flex;
+    z-index: 10;
+    position: relative;
+    width: 500px;
+    box-shadow: 4px 8px 16px rgba(0,0,0,0.3);
+    margin-bottom: 300px;
+}
+
+.flexForm > * {
+    border: 0;
+    border-radius: 0px;
+    padding: 0px 0px 0px 10px ;
+    background: #fff; 
+    line-height: 50px;
+    font-size: 16px;
+    outline: 0;
+}
+
+input[type="search"] {
+   flex-basis: 500px; 
+   padding-right: 10px;
+   cursor: pointer;
+}
+
+label img {
+    width: 30px;
+    position: relative;
+    top: 5px;
+}
+
+.flexForm button {
+    background: #4b16bd;
+    border: 1px solid #4b16bd;
+    color: #fff;
+    padding: 0px 30px ;
+    cursor: pointer;
+}
+
+.flexForm button:hover {
+    background: #8a63dd;
 }
